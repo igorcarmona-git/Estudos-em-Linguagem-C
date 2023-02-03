@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 void troca(int *v, int i, int j)
 {
@@ -23,7 +24,7 @@ void bubbleSort(int *v, int num)
 
 int main()
 {
-    int *v;
+    int *v; // Ponteiro, os valores no laço são colocados na primeira posição do ponteiro.
     int num = 10;
 
     v = (int *)malloc(num * sizeof(int));

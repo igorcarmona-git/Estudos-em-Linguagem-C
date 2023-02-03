@@ -2,7 +2,7 @@
 
 #include <stdio.h>
 
-void imprimePessoa(Pessoa x);
+void imprimePessoa(struct Pessoa x);
 
 typedef struct {
     float peso;
@@ -10,7 +10,7 @@ typedef struct {
     float altura;
 } Pessoa;
 
-main(){
+int main(){
     Pessoa p[6];
     int x;
 
@@ -26,6 +26,8 @@ main(){
     scanf("%f", &p[1].altura);
 
     imprimePessoa(p[1]);
+
+    return 0;
 }
 
 void imprimePessoa(Pessoa x){
